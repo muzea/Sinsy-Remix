@@ -40,6 +40,7 @@
 /* ----------------------------------------------------------------- */
 
 #include <fstream>
+#include <cstdlib>
 #include <math.h>
 #include "sinsy.h"
 #include "util_log.h"
