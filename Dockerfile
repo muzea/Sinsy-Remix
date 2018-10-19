@@ -23,8 +23,6 @@ RUN cd Sinsy-Remix && git checkout docker \
           --with-hts-engine-header-path=/Sinsy-Remix/hts_engine_API/include \
           --with-hts-engine-library-path=/Sinsy-Remix/hts_engine_API/lib \
     && make \
-    && make install \
-    && wget http://downloads.sourceforge.net/sinsy/hts_voice_nitech_jp_song070_f001-0.90.tar.gz \
-    && tar -zxf http://downloads.sourceforge.net/sinsy/hts_voice_nitech_jp_song070_f001-0.90.tar.gz \
-    && mv ./hts_voice_nitech_jp_song070_f001-0.90/nitech_jp_song070_f001.htsvoice /Sinsy-Remix
+    && make install
 
+ADD ./nitech_jp_song070_f001.htsvoice /Sinsy-Remix
